@@ -1,0 +1,242 @@
+<div class="fade-in">
+  <c-card class="mb-4">
+    <c-card-header>
+      Vendas
+    </c-card-header>
+    <c-card-body>
+      <c-row style="margin-left: 25px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label for="Pedido">Pedido</label>
+          </c-row>
+          <c-row>
+            <input class="form-control" cFormControl
+            id="Pedido"
+            placeholder="123456"
+            type="text"/>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label>Período</label>
+          </c-row>
+          <c-row>
+            <select class="form-control" aria-label="Período" cSelect>
+              <option>Escolha o período</option>
+              <option value="1">Um mês</option>
+              <option value="2">Três meses</option>
+              <option value="3">Seis meses</option>
+            </select>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label for="Cliente">Cliente</label>
+          </c-row>
+          <c-row>
+            <input class="form-control" cFormControl
+            id="Cliente"
+            placeholder="João das Neves"
+            type="text"/>
+          </c-row>
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label>Pagamento</label>
+          </c-row>
+          <c-row>
+            <select class="form-control" aria-label="Pagamento" cSelect>
+              <option>Meio de pagamento</option>
+              <option value="1">Pix</option>
+              <option value="2">Boleto</option>
+              <option value="3">Cartão de crédito</option>
+            </select>
+          </c-row>
+        </c-col>
+        <c-col>
+          <c-row>
+            &nbsp;
+          </c-row>
+          <c-row style="padding-left: 10px; padding-right: 80px;">
+            <button style="color: #fff;" class="btn btn-info wd-50" cButton color="primary" color="primary">Filtrar</button>
+          </c-row>
+        </c-col>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 15px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <button style="color: #fff;" class="btn btn-success" cButton color="success" color="success">Incluir pedido</button>
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <a style="color: grey; text-align: right;" routerLink="./" cNavLink>
+            <svg cIcon name="cilPrint" width="25px"></svg>
+          </a>
+        </c-col>
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <table class="table table-striped" cTable>
+          <thead>
+            <tr>
+              <th scope="col">Pedido</th>
+              <th scope="col">Cliente</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Vencimento</th>
+              <th scope="col">Valor da Parcela</th>
+              <th scope="col">Pagamento</th>
+              <th scope="col">Status</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">151</th>
+              <td>João</td>
+              <td>Capinhas diversas</td>
+              <td>15/04/2022</td>
+              <td>R$ 15,00</td>
+              <td>Pix</td>
+              <td>Em envio</td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilPencil" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilFindInPage" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #dc3545" routerLink="./" cNavLink>
+                  <svg cIcon name="cilDelete" size="md"></svg>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">150</th>
+              <td>Serafina</td>
+              <td>Capinhas diversas</td>
+              <td>14/04/2022</td>
+              <td>R$ 150,00</td>
+              <td>Cartão de crédito</td>
+              <td>Em envio</td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilPencil" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilFindInPage" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #dc3545" routerLink="./" cNavLink>
+                  <svg cIcon name="cilDelete" size="md"></svg>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">149</th>
+              <td>José</td>
+              <td>Artigos para celular</td>
+              <td>14/04/2022</td>
+              <td>R$ 22,50</td>
+              <td>Boleto</td>
+              <td>Aguardando pagamento</td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilPencil" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilFindInPage" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #dc3545" routerLink="./" cNavLink>
+                  <svg cIcon name="cilDelete" size="md"></svg>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">148</th>
+              <td>Rafael</td>
+              <td>Capinhas diversas</td>
+              <td>13/04/2022</td>
+              <td>R$ 45,00</td>
+              <td>Boleto</td>
+              <td>Cancelado</td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilPencil" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilFindInPage" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #dc3545" routerLink="./" cNavLink>
+                  <svg cIcon name="cilDelete" size="md"></svg>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">147</th>
+              <td>Raquel</td>
+              <td>Capinhas diversas</td>
+              <td>13/04/2022</td>
+              <td>R$ 165,00</td>
+              <td>Pix</td>
+              <td>Em envio</td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilPencil" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #3399ff" routerLink="./" cNavLink>
+                  <svg cIcon name="cilFindInPage" size="md"></svg>
+                </a>
+              </td>
+              <td>
+                <a style="color: #dc3545" routerLink="./" cNavLink>
+                  <svg cIcon name="cilDelete" size="md"></svg>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./"><</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">1</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">2</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">3</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">></a></li>
+          </ul>
+        </nav>
+      </c-row>
+    </c-card-body>
+  </c-card>
+</div>

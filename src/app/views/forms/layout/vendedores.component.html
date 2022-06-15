@@ -1,0 +1,126 @@
+<div class="fade-in">
+  <c-card>
+    <c-card-header>
+      Vendedores
+    </c-card-header>
+    <c-card-body>
+      <c-row style="margin-left: 25px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label for="Vendedor">Vendedor</label>
+          </c-row>
+          <c-row>
+            <input class="form-control" cFormControl
+            id="Vendedor"
+            placeholder="Rogério"
+            type="text"/>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            <label>Status</label>
+          </c-row>
+          <c-row>
+            <select class="form-control" aria-label="Status" cSelect>
+              <option>Escolha um status</option>
+              <option value="1">Ativo</option>
+              <option value="2">Inativo</option>
+            </select>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <c-row>
+            &nbsp;
+          </c-row>
+          <c-row style="padding-left: 10px; padding-right: 80px;">
+            <button style="color: #fff;" class="btn btn-info wd-50" cButton color="primary" color="primary">Filtrar</button>
+          </c-row>
+        </c-col>
+
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col>
+          <c-row>
+            &nbsp;
+          </c-row>
+          <c-row style="padding-left: 10px; padding-right: 80px;">
+            &nbsp;
+          </c-row>
+        </c-col>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 15px">
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          <button style="color: #fff;" class="btn btn-success" cButton color="success" color="success">Incluir Vendedor</button>
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+        <c-col style="margin-left: 10px; margin-right: 10px;">
+          &nbsp;
+        </c-col>
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <table class="table table-striped" cTable>
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Data de contratação</th>
+              <th scope="col">Data de nascimento</th>
+              <th scope="col">Status</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1151</th>
+              <td>Jão João</td>
+              <td>01/03/2021</td>
+              <td>15/04/1986</td>
+              <td>Ativo</td>
+            </tr>
+            <tr>
+              <th scope="row">1150</th>
+              <td>Raquel</td>
+              <td>09/10/2020</td>
+              <td>14/04/1999</td>
+              <td>Ativo</td>
+            </tr>
+            <tr>
+              <th scope="row">1149</th>
+              <td>Rafael</td>
+              <td>04/08/2019</td>
+              <td>04/09/1997</td>
+              <td>Ativo</td>
+            </tr>
+          </tbody>
+        </table>
+      </c-row>
+      <c-row>
+        &nbsp;
+      </c-row>
+      <c-row style="margin-left: 3%; margin-right: 3%;">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./"><</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">1</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">2</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">3</a></li>
+            <li class="page-item"><a class="page-link" style="color: #3399ff" routerLink="./">></a></li>
+          </ul>
+        </nav>
+      </c-row>
+    </c-card-body>
+  </c-card>
+</div>
