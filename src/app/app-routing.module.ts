@@ -28,22 +28,22 @@ const routes: Routes = [
       {
         path: 'vendas',
         loadChildren: () =>
-          import('./views/theme/theme.module').then((m) => m.ThemeModule)
+          import('./views/vendas/theme.module').then((m) => m.ThemeModule)
       },
       {
         path: 'produtos',
         loadChildren: () =>
-          import('./views/base/base.module').then((m) => m.BaseModule)
+          import('./views/produtos/base.module').then((m) => m.BaseModule)
       },
       {
         path: 'vendedores',
         loadChildren: () =>
-          import('./views/forms/forms.module').then((m) => m.CoreUIFormsModule)
+          import('./views/vendedores/forms.module').then((m) => m.CoreUIFormsModule)
       },
       {
         path: 'clientes',
         loadChildren: () =>
-          import('./views/icons/icons.module').then((m) => m.IconsModule)
+          import('./views/clientes/icons.module').then((m) => m.IconsModule)
       },
       {
         path: 'notifications',

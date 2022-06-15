@@ -34,7 +34,8 @@ import { IconModule } from '@coreui/icons-angular';
 import { DocsComponentsModule } from '@docs-components/docs-components.module';
 
 // views
-import { produtosComponent } from './accordion/produtos.component';
+import { produtosComponent } from './produtos/produtos.component';
+import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 
 // Components Routing
 import { BaseRoutingModule } from './base-routing.module';
@@ -71,6 +72,7 @@ import { BaseRoutingModule } from './base-routing.module';
     DocsComponentsModule,
   ],
   declarations: [
+    NovoProdutoComponent,
     produtosComponent
   ],
 })

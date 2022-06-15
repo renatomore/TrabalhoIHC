@@ -5,6 +5,7 @@ import { CardModule, GridModule } from '@coreui/angular';
 import { IconModule } from '@coreui/icons-angular';
 
 import { ClientesComponent } from './clientes.component';
+import { NovoClienteComponent } from './novo-cliente/novo-cliente.component';
 import { IconsRoutingModule } from './icons-routing.module';
 import { DocsComponentsModule } from '@docs-components/docs-components.module';
 
@@ -18,7 +19,8 @@ import { DocsComponentsModule } from '@docs-components/docs-components.module';
     DocsComponentsModule
   ],
   declarations: [
-    ClientesComponent
+    ClientesComponent,
+    NovoClienteComponent
   ]
 })
 export class IconsModule {

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { produtosComponent } from './accordion/produtos.component';
+import { produtosComponent } from './produtos/produtos.component';
+import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,13 @@ const routes: Routes = [
         component: produtosComponent,
         data: {
           title: 'produtos',
+        },
+      },
+      {
+        path: 'novo-produto',
+        component: NovoProdutoComponent,
+        data: {
+          title: 'novo-produto',
         },
       }
     ],

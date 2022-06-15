@@ -16,7 +16,7 @@ import {
 import { DocsComponentsModule } from '@docs-components/docs-components.module';
 
 import { FormsRoutingModule } from './forms-routing.module';
-import { VendedoresComponent } from './layout/vendedores.component';
+import { VendedoresComponent } from './vendedores/vendedores.component';
 
 
 @NgModule({
