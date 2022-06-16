@@ -1,14 +1,14 @@
 <div class="fade-in">
   <c-card>
     <c-card-header>
-      Novo Cliente
+      Novo Vendedor
     </c-card-header>
     <c-card-body>
       <form cForm>
         <c-row>
           <c-col>
             <div class="mb-3">
-              <label cLabel for="nome">Nome do Cliente</label>
+              <label cLabel for="nome">Nome do vendedor</label>
               <input class="form-control" cFormControl
                         id="nome"
                         placeholder="João da Silva Sauro"
@@ -20,10 +20,10 @@
         <c-row>
           <c-col>
             <div class="mb-3">
-              <label cLabel for="cpf-cnpj">CPF ou CNPJ</label>
+              <label cLabel for="cpf-cnpj">CPF</label>
               <input class="form-control" cFormControl
                         id="cpf-cnpj"
-                        placeholder="123.456.789-10 ou 12.123.123/0001-01"
+                        placeholder="123.456.789-10"
                         type="text"
                   />
             </div>
@@ -49,9 +49,9 @@
                 />
           </c-col>
           <c-col class="mb-3 w10">
-            <label cLabel for="nascimento-fundacao">Data de nascimento / Fundação</label>
+            <label cLabel for="nascimento">Data de nascimento</label>
             <input class="form-control" cFormControl
-                      id="nascimento-fundacao"
+                      id="nascimento"
                       placeholder="12/10/1990"
                       type="date"
                 />
@@ -146,7 +146,7 @@
             </button>
           </c-col>
           <c-col>
-            <button style="color: #FFF" class="btn btn-danger" cButton type="submit" routerLink="/clientes">
+            <button style="color: #FFF" class="btn btn-danger" cButton type="submit" routerLink="/vendedores">
               Cancelar
             </button>
           </c-col>

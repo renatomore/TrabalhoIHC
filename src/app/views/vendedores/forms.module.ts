@@ -17,11 +17,13 @@ import { DocsComponentsModule } from '@docs-components/docs-components.module';
 
 import { FormsRoutingModule } from './forms-routing.module';
 import { VendedoresComponent } from './vendedores/vendedores.component';
+import { NovoVendedorComponent } from './novo-vendedor/novo-vendedor.component';
 
 
 @NgModule({
   declarations: [
-    VendedoresComponent
+    VendedoresComponent,
+    NovoVendedorComponent
   ],
   imports: [
     CommonModule,

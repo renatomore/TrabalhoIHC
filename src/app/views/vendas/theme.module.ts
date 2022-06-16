@@ -8,6 +8,7 @@ import { VendasComponent, ThemeColorComponent } from './vendas.component';
 
 // Theme Routing
 import { ThemeRoutingModule } from './theme-routing.module';
+import { NovoPedidoComponent } from './novo-pedido/novo-pedido.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { ThemeRoutingModule } from './theme-routing.module';
     TabsModule
   ],
   declarations: [
+    NovoPedidoComponent,
     VendasComponent,
     ThemeColorComponent,
   ]
