@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { produtosComponent } from './produtos/produtos.component';
+import { ProdutosComponent } from './produtos/produtos.component';
 import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
 
 const routes: Routes = [
@@ -17,7 +17,7 @@ const routes: Routes = [
       },
       {
         path: 'produtos',
-        component: produtosComponent,
+        component: ProdutosComponent,
         data: {
           title: 'produtos',
         },
@@ -37,5 +37,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class BaseRoutingModule {}
+export class ProdutosRoutingModule {}
 

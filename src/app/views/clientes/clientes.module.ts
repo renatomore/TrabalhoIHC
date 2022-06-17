@@ -6,12 +6,12 @@ import { IconModule } from '@coreui/icons-angular';
 
 import { ClientesComponent } from './clientes.component';
 import { NovoClienteComponent } from './novo-cliente/novo-cliente.component';
-import { IconsRoutingModule } from './icons-routing.module';
+import { ClientesRoutingModule } from './clientes-routing.module';
 import { DocsComponentsModule } from '@docs-components/docs-components.module';
 
 @NgModule({
   imports: [
-    IconsRoutingModule,
+    ClientesRoutingModule,
     CardModule,
     GridModule,
     IconModule,
@@ -23,5 +23,5 @@ import { DocsComponentsModule } from '@docs-components/docs-components.module';
     NovoClienteComponent
   ]
 })
-export class IconsModule {
+export class ClientesModule {
 }

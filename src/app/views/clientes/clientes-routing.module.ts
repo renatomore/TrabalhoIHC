@@ -37,5 +37,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class IconsRoutingModule {
+export class ClientesRoutingModule {
 }

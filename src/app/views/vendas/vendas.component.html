@@ -89,9 +89,9 @@
             <tr>
               <th scope="col">Pedido</th>
               <th scope="col">Cliente</th>
-              <th scope="col">Descrição</th>
-              <th scope="col">Vencimento</th>
-              <th scope="col">Valor da Parcela</th>
+              <th scope="col">Vendedor</th>
+              <th scope="col">Data da venda</th>
+              <th scope="col">Valor do pedido</th>
               <th scope="col">Pagamento</th>
               <th scope="col">Status</th>
               <th>&nbsp;</th>
@@ -100,110 +100,14 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">151</th>
-              <td>João</td>
-              <td>Capinhas diversas</td>
-              <td>15/04/2022</td>
-              <td>R$ 15,00</td>
-              <td>Pix</td>
-              <td>Em envio</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">150</th>
-              <td>Serafina</td>
-              <td>Capinhas diversas</td>
-              <td>14/04/2022</td>
-              <td>R$ 150,00</td>
-              <td>Cartão de crédito</td>
-              <td>Em envio</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">149</th>
-              <td>José</td>
-              <td>Artigos para celular</td>
-              <td>14/04/2022</td>
-              <td>R$ 22,50</td>
-              <td>Boleto</td>
-              <td>Aguardando pagamento</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">148</th>
-              <td>Rafael</td>
-              <td>Capinhas diversas</td>
-              <td>13/04/2022</td>
-              <td>R$ 45,00</td>
-              <td>Boleto</td>
-              <td>Cancelado</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">147</th>
-              <td>Raquel</td>
-              <td>Capinhas diversas</td>
-              <td>13/04/2022</td>
-              <td>R$ 165,00</td>
-              <td>Pix</td>
-              <td>Em envio</td>
+            <tr *ngFor="let item of listaVendas">
+              <th scope="row">{{ item['id'] }}</th>
+              <td>{{ item['nomeCliente'] }}</td>
+              <td>{{ item['nomeVendedor'] }}</td>
+              <td>{{ item['dataVenda'] }}</td>
+              <td>R$ {{ item['valorTotal'] }}</td>
+              <td>{{ item['formaPagamento'] }}</td>
+              <td>{{ item['status'] }}</td>
               <td>
                 <a style="color: #3399ff" routerLink="./" cNavLink>
                   <svg cIcon name="cilPencil" size="md"></svg>

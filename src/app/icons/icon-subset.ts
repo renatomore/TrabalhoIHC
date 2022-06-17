@@ -1,4 +1,5 @@
 import {
+  cilApple,
   cilFindInPage,
   cilDelete,
   cilToggleOff,
@@ -97,6 +98,7 @@ import {
 } from '@coreui/icons';
 
 export const iconSubset = {
+  cilApple,
   cilFindInPage,
   cilDelete,
   cilToggleOff,
@@ -195,6 +197,7 @@ export const iconSubset = {
 };
 
 export enum IconSubset {
+  cilApple = 'cilApple',
   cilFindInPage = "cilFindInPage",
   cilDelete = "cilDelete",
   cilToggleOff = "cilToggleOff",

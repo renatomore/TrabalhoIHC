@@ -20,6 +20,18 @@ export const navItems: INavData[] = [
     class: 'custom-nav-item'
   },
   {
+    name: 'Categorias',
+    url: '/categorias',
+    iconComponent: { name: 'cil-list'},
+    class: 'custom-nav-item'
+  },
+  {
+    name: 'Marcas',
+    url: '/marcas',
+    iconComponent: { name: 'cil-apple'},
+    class: "custom-nav-item"
+  },
+  {
     name: 'Vendedores',
     url: '/vendedores/vendedores',
     iconComponent: { name: 'cil-group' },

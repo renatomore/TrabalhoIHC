@@ -1,54 +1,43 @@
 <div class="fade-in">
   <c-card>
     <c-card-header>
-      Clientes
+      Marcas
     </c-card-header>
     <c-card-body>
       <c-row style="margin-left: 25px">
         <c-col style="margin-left: 10px; margin-right: 10px;">
           <c-row>
-            <label for="Cliente">Cliente</label>
+            <label for="Id">Id</label>
           </c-row>
           <c-row>
             <input class="form-control" cFormControl
-            id="Cliente"
-            placeholder="João das Neves"
+            id="Id"
+            placeholder="Id da marca"
             type="text"/>
           </c-row>
         </c-col>
-
         <c-col style="margin-left: 10px; margin-right: 10px;">
           <c-row>
-            <label>Status</label>
+            <label for="Nome">Nome</label>
           </c-row>
           <c-row>
-            <select class="form-control" aria-label="Status" cSelect>
-              <option>Escolha um status</option>
-              <option value="1">Ativo</option>
-              <option value="2">Inativo</option>
-            </select>
+            <input class="form-control" cFormControl
+            id="Nome"
+            placeholder="Nome da marca"
+            type="text"/>
           </c-row>
         </c-col>
-
         <c-col style="margin-left: 10px; margin-right: 10px;">
           <c-row>
             &nbsp;
           </c-row>
           <c-row style="padding-left: 10px; padding-right: 80px;">
-            <button style="color: #fff;" class="btn btn-info wd-50" cButton color="info" color="info">Filtrar</button>
+            <button style="color: #fff;" class="btn btn-info wd-50" cButton color="primary" color="primary">Filtrar</button>
           </c-row>
         </c-col>
 
         <c-col style="margin-left: 10px; margin-right: 10px;">
           &nbsp;
-        </c-col>
-        <c-col>
-          <c-row>
-            &nbsp;
-          </c-row>
-          <c-row style="padding-left: 10px; padding-right: 80px;">
-            &nbsp;
-          </c-row>
         </c-col>
       </c-row>
       <c-row>
@@ -56,7 +45,7 @@
       </c-row>
       <c-row style="margin-left: 15px">
         <c-col style="margin-left: 10px; margin-right: 10px;">
-          <button style="color: #fff;" class="btn btn-success" cButton color="success" color="success" routerLink="/clientes/novo-cliente">Incluir Cliente</button>
+          <button style="color: #fff;" class="btn btn-success" cButton color="success" color="success" routerLink="/marcas/nova-marca">Incluir nova marca</button>
         </c-col>
         <c-col style="margin-left: 10px; margin-right: 10px;">
           &nbsp;
@@ -74,21 +63,15 @@
             <tr>
               <th scope="col">Id</th>
               <th scope="col">Nome</th>
-              <th scope="col">Sexo</th>
-              <th scope="col">Data de nascimento</th>
-              <th scope="col">Status</th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let item of listaClientes">
-              <th>{{ item['id'] }}</th>
+            <tr *ngFor="let item of listaMarcas">
+              <th scope="row">{{ item['id'] }}</th>
               <td>{{ item['nome'] }}</td>
-              <td>{{ item['sexo'] }}</td>
-              <td>{{ item['dataNascimento'] }}</td>
-              <td>{{ item['status'] }}</td>
               <td>
                 <a style="color: #3399ff" routerLink="./" cNavLink>
                   <svg cIcon name="cilPencil" size="md"></svg>

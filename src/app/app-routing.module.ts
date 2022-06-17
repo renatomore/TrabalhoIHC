@@ -9,7 +9,7 @@ import { RegisterComponent } from './views/pages/register/register.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '*',
     redirectTo: 'dashboard',
     pathMatch: 'full'
   },
@@ -28,22 +28,32 @@ const routes: Routes = [
       {
         path: 'vendas',
         loadChildren: () =>
-          import('./views/vendas/theme.module').then((m) => m.ThemeModule)
+          import('./views/vendas/vendas.module').then((m) => m.VendasModule)
       },
       {
         path: 'produtos',
         loadChildren: () =>
-          import('./views/produtos/base.module').then((m) => m.BaseModule)
+          import('./views/produtos/produtos.module').then((m) => m.ProdutosModule)
       },
       {
         path: 'vendedores',
         loadChildren: () =>
-          import('./views/vendedores/forms.module').then((m) => m.CoreUIFormsModule)
+          import('./views/vendedores/vendedores.module').then((m) => m.VendedoresModule)
+      },
+      {
+        path: 'categorias',
+        loadChildren: () =>
+          import('./views/categorias/categorias.module').then((m) => m.CategoriasModule)
+      },
+      {
+        path: 'marcas',
+        loadChildren: () =>
+          import('./views/marcas/marcas.module').then((m) => m.MarcasModule)
       },
       {
         path: 'clientes',
         loadChildren: () =>
-          import('./views/clientes/icons.module').then((m) => m.IconsModule)
+          import('./views/clientes/clientes.module').then((m) => m.ClientesModule)
       },
       {
         path: 'notifications',
@@ -51,15 +61,10 @@ const routes: Routes = [
           import('./views/notifications/notifications.module').then((m) => m.NotificationsModule)
       },
       {
-        path: 'widgets',
-        loadChildren: () =>
-          import('./views/widgets/widgets.module').then((m) => m.WidgetsModule)
-      },
-      {
         path: 'pages',
         loadChildren: () =>
           import('./views/pages/pages.module').then((m) => m.PagesModule)
-      },
+      }
     ]
   },
   {

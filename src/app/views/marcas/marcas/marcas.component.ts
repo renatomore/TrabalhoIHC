@@ -1,31 +1,31 @@
 import { Component } from '@angular/core';
-import { ProdutosService } from './../../../services/produtos/produtos.service';
+import { MarcasService } from '../../../services/marcas/marcas.service';
 import { IconSetService } from '@coreui/icons-angular';
 import { brandSet, flagSet, freeSet } from '@coreui/icons';
 
 @Component({
-  selector: 'app-produtos',
-  templateUrl: './produtos.component.html',
-  styleUrls: ['./produtos.component.scss'],
+  selector: 'app-marcas',
+  templateUrl: './marcas.component.html',
+  styleUrls: ['./marcas.component.scss'],
   providers: [IconSetService],
 })
-export class ProdutosComponent {
+export class MarcasComponent {
   public title = 'Produtos';
   public icons!: [string, string[]][];
 
   constructor(
     public iconSet: IconSetService,
-    private produtosService: ProdutosService
+    private marcasService: MarcasService
   )
   {
     iconSet.icons = { ...freeSet, ...brandSet, ...flagSet };
   }
 
-  public listaProdutos: any;
+  public listaMarcas: any;
 
   ngOnInit(){
-    this.produtosService.content().subscribe((result) => {
-      this.listaProdutos = result['produtos'];
+    this.marcasService.content().subscribe((result) => {
+      this.listaMarcas = result['marcas'];
     });
   }
 

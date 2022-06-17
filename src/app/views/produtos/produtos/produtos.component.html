@@ -81,112 +81,20 @@
               <th scope="col">Categoria</th>
               <th scope="col">Data de cadastro</th>
               <th scope="col">Preço</th>
-              <th scope="col">Status</th>
+              <th scope="col">Estoque</th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
               <th>&nbsp;</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1151</th>
-              <td>Capa de couro para iPhone 11 Plus</td>
-              <td>Capinhas para celular</td>
-              <td>15/04/2022</td>
-              <td>R$ 90,00</td>
-              <td>Em estoque</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1150</th>
-              <td>Capa carteira para Redmi Note 11 Pro</td>
-              <td>Capinhas para celular</td>
-              <td>15/04/2022</td>
-              <td>R$ 40,00</td>
-              <td>Em estoque</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1149</th>
-              <td>Capa carteira iPhone 13</td>
-              <td>Capinhas para celular</td>
-              <td>04/09/2021</td>
-              <td>R$ 69,99</td>
-              <td>Em estoque</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1148</th>
-              <td>Carregador Tipo-C 35w</td>
-              <td>Acessórios para celular</td>
-              <td>01/04/2022</td>
-              <td>R$ 44,99</td>
-              <td>Esgotado</td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilPencil" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #3399ff" routerLink="./" cNavLink>
-                  <svg cIcon name="cilFindInPage" size="md"></svg>
-                </a>
-              </td>
-              <td>
-                <a style="color: #dc3545" routerLink="./" cNavLink>
-                  <svg cIcon name="cilDelete" size="md"></svg>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1147</th>
-              <td>Carregador turbo Tipo-A 45w</td>
-              <td>Acessórios para celular</td>
-              <td>13/08/2021</td>
-              <td>R$ 34,99</td>
-              <td>Em estoque</td>
+            <tr *ngFor="let item of listaProdutos">
+              <th scope="row">{{ item['id'] }}</th>
+              <td>{{ item['nome'] }}</td>
+              <td>{{ item['nomeCategoria'] }}</td>
+              <td>{{ item['dataCadastro'] }}</td>
+              <td>R$ {{ item['preco'] }}</td>
+              <td>{{ item['estoque'] }}</td>
               <td>
                 <a style="color: #3399ff" routerLink="./" cNavLink>
                   <svg cIcon name="cilPencil" size="md"></svg>
