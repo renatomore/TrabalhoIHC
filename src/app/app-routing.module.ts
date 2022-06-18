@@ -9,7 +9,7 @@ import { RegisterComponent } from './views/pages/register/register.component';
 
 const routes: Routes = [
   {
-    path: '*',
+    path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full'
   },
@@ -95,7 +95,7 @@ const routes: Routes = [
       title: 'Register Page'
     }
   },
-  {path: '**', redirectTo: 'dashboard'}
+  {path: '**', redirectTo: '404'}
 ];
 
 @NgModule({
